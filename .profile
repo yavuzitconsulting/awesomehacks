@@ -68,11 +68,11 @@ function embers () {
 }
 
 function angular () {
-(docker run -ti --rm -v ${HOME}:/root -v $(pwd):/myapp alexsuch/angular-cli:14.1.2 ng "$@" && sudo chown -R 1000:1000 *)
+(docker run -ti --rm -v ${HOME}:/root -v $(pwd):/app alexsuch/angular-cli:14.1.2 ng "$@" && sudo chown -R 1000:1000 *)
 }
 
 function angulars () {
-(docker run -ti --rm -v ${HOME}:/root -v $(pwd):/myapp alexsuch/angular-cli:14.1.2 ng serve "$@" && sudo chown -R 1000:1000 *)
+(docker run -ti --rm -v ${HOME}:/root -v $(pwd):/app alexsuch/angular-cli:14.1.2 ng serve "$@" && sudo chown -R 1000:1000 *)
 }
 
 #dotnet
